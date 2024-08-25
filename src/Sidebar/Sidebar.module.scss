@@ -1,0 +1,17 @@
+.sidebar {
+    @apply rounded-lg fixed left-4 top-5 w-52 bg-white/10 shadow-lg;
+
+    .menu {
+        > a {
+          @apply flex items-center gap-2 p-3 transition-colors duration-300 ease-in-out;
+
+          &:hover {
+            @apply bg-white/20;
+
+            > svg {
+                @apply text-purple-400 transition-colors duration-300 ease-in-out
+            }
+          }
+        }
+    }
+}
