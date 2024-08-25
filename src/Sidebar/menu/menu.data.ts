@@ -1,5 +1,5 @@
 import { IMenuItem } from "../../types/types"
-import { Home, Settings,Users, CheckSquare } from 'lucide-react'
+import { Home, Settings,Users, CheckSquare, Award } from 'lucide-react'
 
 export const MENU: IMenuItem[] = [
     {
@@ -18,9 +18,9 @@ export const MENU: IMenuItem[] = [
         link:'/todo'
      },
      {
-        icon: Home,
-        name:'Home',
-        link:'/'
+        icon: Award,
+        name:'Achievements',
+        link:'/achievements'
      },
     {
         icon: Settings,
