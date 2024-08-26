@@ -2,9 +2,12 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
 import './index.css'
+import { LazyMotion , domAnimation } from 'framer-motion'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <LazyMotion features={domAnimation}>
+      <App />
+    </LazyMotion>    
   </StrictMode>,
 )
