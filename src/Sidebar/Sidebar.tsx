@@ -1,10 +1,11 @@
 import { Menu } from "./menu/Menu"
 import cl from './Sidebar.module.scss'
-import { useState } from "react"
+import { useAtom } from "jotai/react";
 import { PanelLeftClose, PanelLeftOpen } from 'lucide-react'
+import { isCollapsedAtom } from "../store";
 
 export function Sidebar(){
-    const [isCollapsed, setIsCollapsed] = useState(false);
+    const [isCollapsed, setIsCollapsed] = useAtom(isCollapsedAtom);
 
     const toggleSidebar = () => {
         setIsCollapsed(!isCollapsed)
