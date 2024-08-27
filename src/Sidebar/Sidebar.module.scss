@@ -4,12 +4,33 @@
    &.collapsed {
     .menu  {
       > a {
-       @apply p-2;
+       @apply p-2 flex items-center justify-center;
+
+       &:hover {
+        background: transparent !important;
+       }
 
        &:first-child {
         @apply pt-10
        }
      }
+    }
+    .toggle {
+      @apply top-1 left-3
+    }
+   }
+
+   &.canHover {
+    .menu {
+      > a {
+        &:hover {
+          @apply bg-white/10;
+
+          > svg {
+            @apply text-purple-400 transition-colors duration-300 ease-in-out
+        }
+        }
+      }
     }
    }
 
@@ -17,13 +38,6 @@
         > a {
           @apply flex items-center gap-2 p-3 transition-colors duration-300 ease-in-out;
 
-          &:hover {
-            @apply bg-white/20;
-
-            > svg {
-                @apply text-purple-400 transition-colors duration-300 ease-in-out
-            }
-          }
         }
     }
 
