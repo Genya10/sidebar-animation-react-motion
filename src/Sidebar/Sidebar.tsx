@@ -24,7 +24,7 @@ export function Sidebar() {
         setIsCanHover(true);
       }, 500);
     }
-    console.log(isCanHover)
+    console.log(isCanHover);
     setIsCollapsed(!isCollapsed);
   };
 
